@@ -1,0 +1,17 @@
+<%- include('partials/header.ejs') %>
+
+    <h1>Make your own blog</h1>
+
+    <form action="/submit" method="POST">
+        <input type="text" name="blog" placeholder="Enter your blog">
+        <input type="submit" value="OK">
+    </form>
+
+    <div class="blog">
+        <h1>These are written Blog</h1>
+        <p>
+            <%= madeblog %>
+        </p>
+    </div>
+
+<%- include('partials/footer.ejs') %>

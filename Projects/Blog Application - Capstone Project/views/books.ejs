@@ -1,0 +1,18 @@
+<%- include('partials/header.ejs') %>
+
+    <h1>Books</h1>
+
+    <ul>
+        <% item.forEach(item=> { %>
+            <li>
+                <img src="<%= item %>.jpg" alt="">
+                <p>
+                    <%= item %>
+                </p>
+            </li>
+            <% }) %>
+    </ul>
+
+
+
+<%- include('partials/footer.ejs') %>
